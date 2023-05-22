@@ -1,13 +1,21 @@
+using System.Reflection.Metadata.Ecma335;
+
 namespace WinFormsAppTest
 {
     public partial class Calculator : Form
     {
+        List<int> nums = new List<int>();
+        List<char> chars = new List<char>();
+        int index = 0;
+        static string calculation = "/+-*";
+        double result = 0;
 
         public Calculator()
         {
             InitializeComponent();
             AddNumberBtn();
         }
+
 
         public void AddNumberBtn()
         {
@@ -32,10 +40,12 @@ namespace WinFormsAppTest
                 }
             }
         }
+
         private void btnNumberClick(object sender, EventArgs e)
         {
             Button btn = (Button)sender;
             lblMath.Text += btn.Text;
+
         }
 
         private void btnDelete_Click(object sender, EventArgs e)
@@ -43,23 +53,64 @@ namespace WinFormsAppTest
             if (lblMath.Text.Length > 0)
             {
                 lblMath.Text = lblMath.Text.Substring(0, lblMath.Text.Length - 1);
+                index = 0;
+                nums.Clear();
+                chars.Clear();
             }
         }
 
         private void btnCalculation(object sender, EventArgs e)
         {
             btnNumberClick(sender, e);
+
         }
 
+        private static bool CheckChar(char a)
+        {
+            for (int i = 0; i < calculation.Length; i++)
+            {
+                if (a == calculation[i] )
+                {
+                    return true;
+                }
+            }
+            return false;
+        }
+
+        /// <summary>
+        /// Show result in calaculator
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void TakeResult(object sender, EventArgs e)
         {
-
+            for (int i = index; i < lblMath.Text.Length; i++)
+            {
+                if (CheckChar(lblMath.Text[i]))
+                {
+                    if (int.TryParse(lblMath.Text.Substring(index,i-index),out int temp))
+                    {
+                        nums.Add(temp);
+                        index = i + 1;
+                        chars.Add(lblMath.Text[i]);
+                        lblResult.Text = ""+Program.Calculate(lblMath.Text);
+                    }
+                }
+            }
         }
 
+        /// <summary>
+        /// Clear all display in calculator
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void ClearMath(object sender, EventArgs e)
         {
             lblMath.Text = "";
             lblResult.Text = "";
+            index = 0;
+            nums.Clear();
+            chars.Clear();
         }
     }
 }

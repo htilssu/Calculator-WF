@@ -1,6 +1,6 @@
 namespace WinFormsAppTest
 {
-    internal static class Program
+     public  static partial class Program
     {
         /// <summary>
         ///  The main entry point for the application.
