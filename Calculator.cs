@@ -6,7 +6,6 @@ namespace WinFormsAppTest
     {
         List<int> nums = new List<int>();
         List<char> chars = new List<char>();
-        int index = 0;
         static string calculation = "/+-*";
         double result = 0;
 
@@ -53,7 +52,6 @@ namespace WinFormsAppTest
             if (lblMath.Text.Length > 0)
             {
                 lblMath.Text = lblMath.Text.Substring(0, lblMath.Text.Length - 1);
-                index = 0;
                 nums.Clear();
                 chars.Clear();
             }
@@ -88,7 +86,6 @@ namespace WinFormsAppTest
         {
             lblMath.Text = "";
             lblResult.Text = "";
-            index = 0;
             nums.Clear();
             chars.Clear();
         }
