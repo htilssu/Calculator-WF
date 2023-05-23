@@ -65,17 +65,7 @@ namespace WinFormsAppTest
 
         }
 
-        private static bool CheckChar(char a)
-        {
-            for (int i = 0; i < calculation.Length; i++)
-            {
-                if (a == calculation[i] )
-                {
-                    return true;
-                }
-            }
-            return false;
-        }
+
 
         /// <summary>
         /// Show result in calaculator
@@ -84,19 +74,9 @@ namespace WinFormsAppTest
         /// <param name="e"></param>
         private void TakeResult(object sender, EventArgs e)
         {
-            for (int i = index; i < lblMath.Text.Length; i++)
-            {
-                if (CheckChar(lblMath.Text[i]))
-                {
-                    if (int.TryParse(lblMath.Text.Substring(index,i-index),out int temp))
-                    {
-                        nums.Add(temp);
-                        index = i + 1;
-                        chars.Add(lblMath.Text[i]);
-                        lblResult.Text = ""+Program.Calculate(lblMath.Text);
-                    }
-                }
-            }
+
+            lblResult.Text = "" + Program.Calculate(lblMath.Text);
+
         }
 
         /// <summary>

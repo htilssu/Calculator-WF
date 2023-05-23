@@ -6,9 +6,9 @@ namespace WinFormsAppTest
 
     partial class Program
     {
-        public static int Calculate(string expression)
+        public static double Calculate(string expression)
         {
-            Stack<int> operands = new Stack<int>();
+            Stack<double> operands = new Stack<double>();
             Stack<char> operators = new Stack<char>();
             Dictionary<char, int> precedence = new Dictionary<char, int>()
         {
@@ -17,13 +17,24 @@ namespace WinFormsAppTest
             {'*', 2},
             {'/', 2}
         };
+            int GetNumber(ref int index)
+            {
+                int number = 0;
+                while (index < expression.Length && char.IsDigit(expression[index]))
+                {
+                    number = number * 10 + (expression[index] - '0');
+                    index++;
+                }
+                index--;
+                return number;
+            }
 
             void ApplyOperation()
             {
                 char op = operators.Pop();
-                int operand2 = operands.Pop();
-                int operand1 = operands.Pop();
-                int result;
+                double operand2 = operands.Pop();
+                double operand1 = operands.Pop();
+                double result;
 
                 switch (op)
                 {
@@ -42,30 +53,31 @@ namespace WinFormsAppTest
                     default:
                         throw new ArgumentException("Invalid operator");
                 }
-
                 operands.Push(result);
             }
 
-            foreach (char c in expression)
+            for (int i = 0; i < expression.Length; i++)
+            
             {
-                if (char.IsDigit(c))
+                if (char.IsDigit(expression[i]))
                 {
-                    operands.Push(int.Parse(c.ToString()));
+                    int number = GetNumber(ref i);
+                    operands.Push(number);
                 }
-                else if (precedence.ContainsKey(c))
+                else if (precedence.ContainsKey(expression[i]))
                 {
-                    while (operators.Count > 0 && operators.Peek() != '(' && precedence[c] <= precedence[operators.Peek()])
+                    while (operators.Count > 0 && operators.Peek() != '(' && precedence[expression[i]] <= precedence[operators.Peek()])
                     {
                         ApplyOperation();
                     }
 
-                    operators.Push(c);
+                    operators.Push(expression[i]);
                 }
-                else if (c == '(')
+                else if (expression[i] == '(')
                 {
-                    operators.Push(c);
+                    operators.Push(expression[i]);
                 }
-                else if (c == ')')
+                else if (expression[i] == ')')
                 {
                     while (operators.Count > 0 && operators.Peek() != '(')
                     {
