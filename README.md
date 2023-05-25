@@ -1,6 +1,6 @@
 # Calculator App
 
-![Calculator Icon](calculator_icon.png)
+![Calculator Icon](./image/icon.png)
 
 ## Introduction
 Calculator App is a simple calculator application written in C# and built using WinForms for the user interface. The app allows you to perform basic and advanced mathematical calculations quickly and easily.
@@ -21,7 +21,7 @@ Calculator App is a simple calculator application written in C# and built using 
 If you have any feedback, suggestions, or encounter any issues with the app, please open an issue in the [Issues](link-to-issues) section of this repository.
 
 ## License
-[MIT License](link-to-license) (c) 2023.
+[MIT License](./LICENCE.txt) (c) 2023.
 
 ---
 
