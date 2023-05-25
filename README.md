@@ -1,6 +1,7 @@
 # Calculator App
-
-![Calculator Icon](calculator_icon.png)
+<p align="center">
+  <img src="./img/icon.png" alt="Image" width="400">
+</p>
 
 ## Introduction
 Calculator App is a simple calculator application written in C# and built using WinForms for the user interface. The app allows you to perform basic and advanced mathematical calculations quickly and easily.
@@ -18,10 +19,10 @@ Calculator App is a simple calculator application written in C# and built using 
 4. The Calculator app will open, and you can start using it immediately.
 
 ## Feedback and Issue Reporting
-If you have any feedback, suggestions, or encounter any issues with the app, please open an issue in the [Issues](link-to-issues) section of this repository.
+If you have any feedback, suggestions, or encounter any issues with the app, please open an issue in the [Issues](https://github.com/shuumlem/Calculator-WF/issues) section of this repository.
 
 ## License
-[MIT License](link-to-license) (c) 2023.
+[[MIT License](./LICENSE)] (c) 2023.
 
 ---
 
