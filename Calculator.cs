@@ -73,7 +73,7 @@ namespace WinFormsAppTest
         private void TakeResult(object sender, EventArgs e)
         {
 
-            lblResult.Text = "" + Program.Calculate(lblMath.Text);
+            lblResult.Text = "" + Calculate(lblMath.Text);
 
         }
 
@@ -89,5 +89,7 @@ namespace WinFormsAppTest
             nums.Clear();
             chars.Clear();
         }
+
+
     }
 }

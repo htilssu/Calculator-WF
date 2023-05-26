@@ -1,10 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
 namespace WinFormsAppTest
 {
-
-    partial class Program
+    public partial class Calculator
     {
         public static double Calculate(string expression)
         {
@@ -57,7 +59,7 @@ namespace WinFormsAppTest
             }
 
             for (int i = 0; i < expression.Length; i++)
-            
+
             {
                 if (char.IsDigit(expression[i]))
                 {
