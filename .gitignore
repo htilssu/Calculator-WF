@@ -1,2 +1,4 @@
 Calculator.sln
 obj
+.vs
+*.sln
