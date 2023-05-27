@@ -1,5 +1,3 @@
-using System.Reflection.Metadata.Ecma335;
-
 namespace WinFormsAppTest
 {
     public partial class Calculator : Form
@@ -75,7 +73,7 @@ namespace WinFormsAppTest
         private void TakeResult(object sender, EventArgs e)
         {
 
-            lblResult.Text = "" + Math.Calculate(lblMath.Text).ToString("n9");
+            lblResult.Text = "" + Math.Calculate(lblMath.Text).ToString("#,##0.#########");
 
         }
 
@@ -92,5 +90,9 @@ namespace WinFormsAppTest
             chars.Clear();
         }
 
+        private void lblMath_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

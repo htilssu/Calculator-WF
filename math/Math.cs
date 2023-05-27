@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace WinFormsAppTest
+﻿namespace WinFormsAppTest
 {
     internal class Math
     {
@@ -24,7 +18,7 @@ namespace WinFormsAppTest
                 int number = 0;
                 while (index < expression.Length && char.IsDigit(expression[index]))
                 {
-                    number = number * 10 + (expression[index] - '0');
+                    number = (number * 10) + (expression[index] - '0');
                     index++;
                 }
                 index--;

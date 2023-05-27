@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             Button btnNumber0;
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Calculator));
             pnlDisplay = new Panel();
             lblResult = new Label();
             lblMath = new Label();
@@ -93,6 +94,7 @@
             lblMath.Size = new Size(516, 75);
             lblMath.TabIndex = 0;
             lblMath.TextAlign = ContentAlignment.MiddleLeft;
+            lblMath.Click += lblMath_Click;
             // 
             // pnlOption
             // 
@@ -272,10 +274,11 @@
             ClientSize = new Size(516, 657);
             Controls.Add(pnlOption);
             Controls.Add(pnlDisplay);
+            Icon = (Icon)resources.GetObject("$this.Icon");
             MaximizeBox = false;
             Name = "Calculator";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "Calculator";
+            Text = "Calculator (Máy tính)  ";
             pnlDisplay.ResumeLayout(false);
             pnlOption.ResumeLayout(false);
             ResumeLayout(false);

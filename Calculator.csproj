@@ -9,25 +9,12 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="bin\**" />
     <Compile Remove="obj\**" />
+    <EmbeddedResource Remove="bin\**" />
     <EmbeddedResource Remove="obj\**" />
+    <None Remove="bin\**" />
     <None Remove="obj\**" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Content Include="bin\Debug\net7.0-windows\Calculator.deps.json" />
-    <Content Include="bin\Debug\net7.0-windows\Calculator.runtimeconfig.json" />
-    <Content Include="bin\Debug\net7.0-windows\WinFormsAppTest.deps.json" />
-    <Content Include="bin\Debug\net7.0-windows\WinFormsAppTest.runtimeconfig.json" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <None Include="bin\Debug\net7.0-windows\Calculator.dll" />
-    <None Include="bin\Debug\net7.0-windows\Calculator.exe" />
-    <None Include="bin\Debug\net7.0-windows\Calculator.pdb" />
-    <None Include="bin\Debug\net7.0-windows\WinFormsAppTest.dll" />
-    <None Include="bin\Debug\net7.0-windows\WinFormsAppTest.exe" />
-    <None Include="bin\Debug\net7.0-windows\WinFormsAppTest.pdb" />
   </ItemGroup>
 
 </Project>
