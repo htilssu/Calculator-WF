@@ -15,25 +15,10 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Compile Include="obj\Debug\net7.0-windows\Calculator.AssemblyInfo.cs" />
-    <Compile Include="obj\Debug\net7.0-windows\WinFormsAppTest.AssemblyInfo.cs" />
-    <Compile Include="obj\Debug\net7.0-windows\WinFormsAppTest.GlobalUsings.g.cs" />
-  </ItemGroup>
-
-  <ItemGroup>
     <Content Include="bin\Debug\net7.0-windows\Calculator.deps.json" />
     <Content Include="bin\Debug\net7.0-windows\Calculator.runtimeconfig.json" />
     <Content Include="bin\Debug\net7.0-windows\WinFormsAppTest.deps.json" />
     <Content Include="bin\Debug\net7.0-windows\WinFormsAppTest.runtimeconfig.json" />
-    <Content Include="obj\Calculator.csproj.nuget.dgspec.json" />
-    <Content Include="obj\Debug\net7.0-windows\Calculator.csproj.FileListAbsolute.txt" />
-    <Content Include="obj\Debug\net7.0-windows\Calculator.designer.deps.json" />
-    <Content Include="obj\Debug\net7.0-windows\Calculator.designer.runtimeconfig.json" />
-    <Content Include="obj\Debug\net7.0-windows\WinFormsAppTest.csproj.FileListAbsolute.txt" />
-    <Content Include="obj\Debug\net7.0-windows\WinFormsAppTest.designer.deps.json" />
-    <Content Include="obj\Debug\net7.0-windows\WinFormsAppTest.designer.runtimeconfig.json" />
-    <Content Include="obj\project.assets.json" />
-    <Content Include="obj\WinFormsAppTest.csproj.nuget.dgspec.json" />
   </ItemGroup>
 
   <ItemGroup>
@@ -43,37 +28,6 @@
     <None Include="bin\Debug\net7.0-windows\WinFormsAppTest.dll" />
     <None Include="bin\Debug\net7.0-windows\WinFormsAppTest.exe" />
     <None Include="bin\Debug\net7.0-windows\WinFormsAppTest.pdb" />
-    <None Include="obj\Calculator.csproj.nuget.g.props" />
-    <None Include="obj\Calculator.csproj.nuget.g.targets" />
-    <None Include="obj\Debug\net7.0-windows\apphost.exe" />
-    <None Include="obj\Debug\net7.0-windows\Calculator.AssemblyInfoInputs.cache" />
-    <None Include="obj\Debug\net7.0-windows\Calculator.assets.cache" />
-    <None Include="obj\Debug\net7.0-windows\Calculator.csproj.AssemblyReference.cache" />
-    <None Include="obj\Debug\net7.0-windows\Calculator.csproj.BuildWithSkipAnalyzers" />
-    <None Include="obj\Debug\net7.0-windows\Calculator.csproj.CoreCompileInputs.cache" />
-    <None Include="obj\Debug\net7.0-windows\Calculator.csproj.GenerateResource.cache" />
-    <None Include="obj\Debug\net7.0-windows\Calculator.dll" />
-    <None Include="obj\Debug\net7.0-windows\Calculator.GeneratedMSBuildEditorConfig.editorconfig" />
-    <None Include="obj\Debug\net7.0-windows\Calculator.genruntimeconfig.cache" />
-    <None Include="obj\Debug\net7.0-windows\Calculator.pdb" />
-    <None Include="obj\Debug\net7.0-windows\refint\Calculator.dll" />
-    <None Include="obj\Debug\net7.0-windows\refint\WinFormsAppTest.dll" />
-    <None Include="obj\Debug\net7.0-windows\ref\Calculator.dll" />
-    <None Include="obj\Debug\net7.0-windows\ref\WinFormsAppTest.dll" />
-    <None Include="obj\Debug\net7.0-windows\WinFormsAppTest.AssemblyInfoInputs.cache" />
-    <None Include="obj\Debug\net7.0-windows\WinFormsAppTest.assets.cache" />
-    <None Include="obj\Debug\net7.0-windows\WinFormsAppTest.Calculator.resources" />
-    <None Include="obj\Debug\net7.0-windows\WinFormsAppTest.csproj.AssemblyReference.cache" />
-    <None Include="obj\Debug\net7.0-windows\WinFormsAppTest.csproj.BuildWithSkipAnalyzers" />
-    <None Include="obj\Debug\net7.0-windows\WinFormsAppTest.csproj.CoreCompileInputs.cache" />
-    <None Include="obj\Debug\net7.0-windows\WinFormsAppTest.csproj.GenerateResource.cache" />
-    <None Include="obj\Debug\net7.0-windows\WinFormsAppTest.dll" />
-    <None Include="obj\Debug\net7.0-windows\WinFormsAppTest.GeneratedMSBuildEditorConfig.editorconfig" />
-    <None Include="obj\Debug\net7.0-windows\WinFormsAppTest.genruntimeconfig.cache" />
-    <None Include="obj\Debug\net7.0-windows\WinFormsAppTest.pdb" />
-    <None Include="obj\project.nuget.cache" />
-    <None Include="obj\WinFormsAppTest.csproj.nuget.g.props" />
-    <None Include="obj\WinFormsAppTest.csproj.nuget.g.targets" />
   </ItemGroup>
 
 </Project>

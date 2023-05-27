@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace WinFormsAppTest
 {
-    public partial class Calculator
+    internal class Math
     {
         public static double Calculate(string expression)
         {

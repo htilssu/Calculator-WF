@@ -24,6 +24,8 @@ namespace WinFormsAppTest
                 btn.Text = i.ToString();
                 btn.Width = 118;
                 btn.BackColor = SystemColors.ButtonShadow;
+                btn.FlatStyle = FlatStyle.Flat;
+                btn.FlatAppearance.BorderSize = 0;
                 btn.Location = new Point();
                 btn.Height = 99;
                 btn.TextAlign = ContentAlignment.MiddleCenter;
@@ -73,7 +75,7 @@ namespace WinFormsAppTest
         private void TakeResult(object sender, EventArgs e)
         {
 
-            lblResult.Text = "" + Calculate(lblMath.Text);
+            lblResult.Text = "" + Math.Calculate(lblMath.Text).ToString("n9");
 
         }
 
@@ -89,7 +91,6 @@ namespace WinFormsAppTest
             nums.Clear();
             chars.Clear();
         }
-
 
     }
 }
